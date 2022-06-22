@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#output{
+    padding: 10px;
+    margin: 10px;
+}
+#copybtn,#btn{
+    margin: 8px;
+    padding: 10px;
+    background-color: gold;
+    border: 1px solid gold;
+}
+.custom_Div{
+    margin: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    background-color: aliceblue;
+    color: red;
+    font-weight: 600;
+}
+
+.animatoinsIn {
+    animation: InAnimation 0.5s ease-in;
+}
+.animatoinsOut {
+    animation: OutAnimation 0.5s ease-in;
+}
+@keyframes InAnimation {
+    from{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes OutAnimation {
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+}
